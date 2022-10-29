@@ -396,7 +396,8 @@ $(function () {
     $(".spinner").show();
     let area = await fetch(areaAPI);
     let res = await area.json();
-    displayArea(res.meals);
+    let filteredMeal = res.meals.filter((meal,index)=> index < 20)
+    displayArea(filteredMeal);
     $(".spinner").hide();
   }
   function displayArea(data) {
@@ -450,7 +451,7 @@ $(function () {
     let area = await fetch(ingredientsAPI);
     let res = await area.json();
     let filteredMeals = res.meals.filter(
-      (meal) => meal.strDescription !== null && meal.strDescription !== ""
+      (meal,index) => meal.strDescription !== null && meal.strDescription !== "" && index < 20
     );
     displayIngredients(filteredMeals);
     $(".spinner").hide();
