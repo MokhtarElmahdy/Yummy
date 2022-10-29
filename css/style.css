@@ -49,7 +49,6 @@ aside .mune-toggler .close {
 section.welcome {
   height: 100%;
   display: none;
-  padding: 150px;
 }
 section.welcome .category {
   position: relative;
