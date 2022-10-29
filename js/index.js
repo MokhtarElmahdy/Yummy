@@ -121,7 +121,7 @@ $(function () {
     } = data[0];
     let strTagsBox = strTags?.split(",").map((tag) => `<li>${tag}</li>`);
     box += `
-  <div class="col-md-4 col-12">
+  <div class="col-lg-4 col-12">
   <div class="meal">
     <div class="meal-image"> <img class="w-100" src=${strMealThumb} alt=""></div>
     <div class="meal-name"> 
@@ -129,7 +129,7 @@ $(function () {
     </div>
   </div>
 </div>
-<div class="col-md-8 col-12"> 
+<div class="col-lg-8 col-12"> 
   <div class="meal-details"> 
     <h2>Instructions</h2>
     <p>${strInstructions}</p>
@@ -316,7 +316,7 @@ $(function () {
     let box = ``;
     let ser = data.map((ser, index) => {
       box += `
-    <div class="col-3">
+    <div class="col-lg-3 col-md-6 col-12">
     <div class="item" id=${ser.idMeal}>
     <img src=${ser.strMealThumb} alt="">
       <p>${ser.strMeal}</p>
@@ -344,7 +344,7 @@ $(function () {
     let box = ``;
     let cat = data.map((cat, index) => {
       box += `
-    <div class="col-3">
+    <div class="col-lg-3 col-md-6 col-12">
     <div class="categories" id=${cat.strCategory}><img src=${
         cat.strCategoryThumb
       } alt="">
@@ -377,7 +377,7 @@ $(function () {
     console.log(data);
     let cat = data.map((cat, index) => {
       box += `
-    <div class="col-3">
+    <div class="col-lg-3 col-md-6 col-12">
     <div class="categorylist" id=${cat.idMeal}><img src=${cat.strMealThumb} alt="">
       <p>${cat.strMeal}</p>
     </div>
@@ -403,7 +403,7 @@ $(function () {
     let box = ``;
     let area = data.map((area, index) => {
       box += `
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12">
       <div class="area" id=${area.strArea}><i class="fa-solid fa-city fa-3x"></i>
         <p>${area.strArea}</p>
       </div>
@@ -429,7 +429,7 @@ $(function () {
     let box = ``;
     let area = data.map((area, index) => {
       box += `
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12">
       <div class="arealist" id=${area.idMeal}><img src=${area.strMealThumb} alt="">
         <p>${area.strMeal}</p>
       </div>
@@ -459,7 +459,7 @@ $(function () {
     let box = ``;
     let ingredients = data.map((ingredient, index) => {
       box += `
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12">
       <div class="ingredient" id=${
         ingredient.strIngredient
       }><i class="fa-solid fa-bowl-food fa-3x"></i>
@@ -489,7 +489,7 @@ $(function () {
     let box = ``;
     let area = data.map((area, index) => {
       box += `
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-12">
       <div class="ingredientslist" id=${area.idMeal}><img src=${area.strMealThumb} alt="">
         <p>${area.strMeal}</p>
       </div>
@@ -647,7 +647,7 @@ $(function () {
     if (isValidate()) {
       $("#btn-submit").removeClass("disabled");
     } else {
-      $(this).addClass("disabled");
+      $("#btn-submit").addClass("disabled");
     }
   });
   $("#btn-submit").click(function (e) {

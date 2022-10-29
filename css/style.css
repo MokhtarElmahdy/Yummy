@@ -281,7 +281,6 @@ section.search .item:hover p {
 section.categories {
   height: 100%;
   display: none;
-  padding: 150px;
 }
 section.categories .categories {
   position: relative;
@@ -318,7 +317,6 @@ section.categories .categories:hover .description {
 section.categorylist {
   height: 100%;
   display: none;
-  padding: 150px;
 }
 section.categorylist .categorylist {
   position: relative;
@@ -349,7 +347,6 @@ section.categorylist .categorylist:hover p {
 section.area {
   height: 100%;
   display: none;
-  padding: 150px;
 }
 section.area .area {
   cursor: pointer;
@@ -368,7 +365,6 @@ section.area .area p {
 section.arealist {
   height: 100%;
   display: none;
-  padding: 150px;
 }
 section.arealist .arealist {
   position: relative;
@@ -399,7 +395,6 @@ section.arealist .arealist:hover p {
 section.ingredients {
   height: 100%;
   display: none;
-  padding: 150px;
 }
 section.ingredients .ingredient {
   cursor: pointer;
@@ -420,7 +415,6 @@ section.ingredients .ingredient p:first-of-type {
 section.ingredientslist {
   height: 100%;
   display: none;
-  padding: 150px;
 }
 section.ingredientslist .ingredientslist {
   position: relative;
@@ -472,7 +466,7 @@ section.contactus .contact-form .form-input:focus-within {
 
 section.details {
   height: 100%;
-  padding: 150px;
+  display: none;
   color: #fff;
 }
 section.details .meal .meal-image {
